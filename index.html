@@ -10,20 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <style>
-    /* =========================================
-       HOMEBREW PALETTE & THEME
-       ========================================= */
     :root {
-	/* Deep, matte charcoal ink */
-	--text-main: #2b2b2b; 
-	/* Neutral, desaturated light-gray drafting paper */
-	--bg-main: #e8e8e8; 
-	/* Subtle ink-on-paper grid */
-	--grid-color: rgba(43, 43, 43, 0.08); 
-	/* Heavy, grounding border */
-	--accent-border: #2b2b2b;
+      /* Charcoal Ink */
+      --text-main: #2b2b2b; 
+      /* Neutral Industrial Grey */
+      --bg-main: #e8e8e8; 
+      /* Dark charcoal grid lines */
+      --grid-color: rgba(43, 43, 43, 0.15); 
+      --accent-border: #2b2b2b;
     }
-    
 
     body {
       font-family: "EB Garamond", Garamond, Georgia, serif;
@@ -34,27 +29,20 @@
       align-items: center;
       justify-content: center;
       
-      /* The Drafting Paper Grid */
-      background:
+      background-color: var(--bg-main);
+      background-image: 
         linear-gradient(var(--grid-color) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
-        var(--bg-main);
-      background-size: 38px 38px;
-      
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+      background-size: 40px 40px;
     }
 
-    /* =========================================
-       LAYOUT STRUCTURE
-       ========================================= */
     .manifesto-container {
       max-width: 720px;
       padding: 60px 40px;
-      background: rgba(246, 240, 230, 0.85); /* Lets the grid bleed through slightly */
-      border: 1px solid rgba(17, 17, 17, 0.15);
+      background: #e8e8e8; 
+      border: 1px solid #2b2b2b;
       border-left: 4px solid var(--accent-border); 
-      box-shadow: 12px 12px 0px rgba(17, 17, 17, 0.05);
+      box-shadow: 12px 12px 0px rgba(43, 43, 43, 0.1);
       margin: 20px;
     }
 
@@ -70,7 +58,7 @@
       font-size: 1.1rem;
       font-weight: 400;
       font-style: italic;
-      color: rgba(17, 17, 17, 0.7);
+      color: rgba(43, 43, 43, 0.7);
       margin: 0 0 40px 0;
       letter-spacing: 0.02em;
     }
@@ -95,8 +83,8 @@
     .footer-meta {
       margin-top: 60px;
       font-size: 0.9rem;
-      color: rgba(17, 17, 17, 0.5);
-      border-top: 1px solid rgba(17, 17, 17, 0.1);
+      color: rgba(43, 43, 43, 0.5);
+      border-top: 1px solid rgba(43, 43, 43, 0.1);
       padding-top: 16px;
       display: flex;
       justify-content: space-between;
