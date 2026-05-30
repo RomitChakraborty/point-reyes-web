@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Point Reyes Sound, Inc.</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================
+       BASE TYPOGRAPHY & THEME
+       ========================================= */
+    :root {
+      --text-main: #111111;
+      --bg-main: #f6f0e6;
+      --grid-color: rgba(0, 0, 0, 0.04);
+      --accent-border: #111111;
+    }
+
+    body {
+      font-family: "EB Garamond", Garamond, Georgia, serif;
+      color: var(--text-main);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* The Architectural Grid */
+      background:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+        var(--bg-main);
+      background-size: 38px 38px;
+      
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* =========================================
+       LAYOUT STRUCTURE
+       ========================================= */
+    .manifesto-container {
+      max-width: 720px;
+      padding: 60px 40px;
+      background: rgba(246, 240, 230, 0.95); /* Slight opacity to let the grid whisper through */
+      border: 1px solid rgba(17, 17, 17, 0.15);
+      border-left: 4px solid var(--accent-border); /* Nod to the binder-spine aesthetic */
+      box-shadow: 12px 12px 0px rgba(17, 17, 17, 0.05);
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 10px 0;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: rgba(17, 17, 17, 0.7);
+      margin: 0 0 40px 0;
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .terminal-block {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.9rem;
+      background: var(--text-main);
+      color: #f6f0e6;
+      padding: 16px;
+      margin-top: 40px;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-meta {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: rgba(17, 17, 17, 0.5);
+      border-top: 1px solid rgba(17, 17, 17, 0.1);
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="manifesto-container">
+    <h1>Point Reyes Sound, Inc.</h1>
+    <h2>San Francisco, California</h2>
+
+    <p>
+      Developing proprietary phase-space transport solvers for high-dimensional and highly correlated systems. Our computational frameworks resolve topological singularities and flow bottlenecks through the strict entropic regularization of the Quantum Boltzmann Equation.
+    </p>
+
+    <p>
+      Currently operating in closed research and development.
+    </p>
+
+    <div class="terminal-block">
+      R&D Inquiries: romit@pointreyessound.com<br>
+      Status: Patent Pending (USPTO)
+    </div>
+
+    <div class="footer-meta">
+      <span>&copy; 2026 Romit Chakraborty</span>
+      <span>U.S. C-Corp</span>
+    </div>
+  </main>
+
+</body>
+</html>
