@@ -11,12 +11,12 @@
 
   <style>
     /* =========================================
-       BASE TYPOGRAPHY & THEME
+       HOMEBREW PALETTE & THEME
        ========================================= */
     :root {
       --text-main: #111111;
       --bg-main: #f6f0e6;
-      --grid-color: rgba(0, 0, 0, 0.04);
+      --grid-color: rgba(17, 17, 17, 0.08);
       --accent-border: #111111;
     }
 
@@ -29,7 +29,7 @@
       align-items: center;
       justify-content: center;
       
-      /* The Architectural Grid */
+      /* The Drafting Paper Grid */
       background:
         linear-gradient(var(--grid-color) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
@@ -46,9 +46,9 @@
     .manifesto-container {
       max-width: 720px;
       padding: 60px 40px;
-      background: rgba(246, 240, 230, 0.95); /* Slight opacity to let the grid whisper through */
+      background: rgba(246, 240, 230, 0.85); /* Lets the grid bleed through slightly */
       border: 1px solid rgba(17, 17, 17, 0.15);
-      border-left: 4px solid var(--accent-border); /* Nod to the binder-spine aesthetic */
+      border-left: 4px solid var(--accent-border); 
       box-shadow: 12px 12px 0px rgba(17, 17, 17, 0.05);
       margin: 20px;
     }
@@ -80,7 +80,7 @@
       font-family: "Courier New", Courier, monospace;
       font-size: 0.9rem;
       background: var(--text-main);
-      color: #f6f0e6;
+      color: var(--bg-main);
       padding: 16px;
       margin-top: 40px;
       border-radius: 2px;
@@ -105,7 +105,7 @@
     <h2>San Francisco, California</h2>
 
     <p>
-      Developing proprietary phase-space transport solvers for high-dimensional and highly correlated systems. Our computational frameworks resolve topological singularities and flow bottlenecks through the strict entropic regularization of the Quantum Boltzmann Equation.
+      Developing phase-space transport solvers for high-dimensional and highly correlated systems. Our computational frameworks resolve topological singularities and flow bottlenecks through the strict entropic regularization of the Quantum Boltzmann Equation.
     </p>
 
     <p>
